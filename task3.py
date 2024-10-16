@@ -6,3 +6,20 @@
 # 2013
 # MMXIII
 
+def rome_num(num):
+    m = num // 1000
+    num %= 1000
+    d = num // 500
+    num %= 500
+    c = num // 100
+    num %= 100
+    l = num // 50
+    num %= 50
+    x = num // 10
+    num %= 10
+    v = num // 5
+    num %= 5
+    i = num // 1
+    print(m * 'M' + d * 'D' + c * 'C' + l * 'L' + x * 'X' + v * 'V' + i * 'I')
+
+rome_num(int(input()))
