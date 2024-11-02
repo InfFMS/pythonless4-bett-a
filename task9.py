@@ -3,4 +3,22 @@
 # или слово NO в противном случае.
 # Операцией возведения в степень пользоваться нельзя!
 # Задача на рекурсию!
+'''
+n = int(input())
+while n % 2 == 0:
+    n //= 2
+if n == 1:
+    print('YES')
+else:
+    print('NO')
+'''
 
+def q(num):
+    if num == 1:
+        print('YES')
+    elif num % 2 == 0:
+        q(num // 2)
+    else:
+        print('NO')
+
+q(int(input()))
